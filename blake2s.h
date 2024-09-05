@@ -1,6 +1,10 @@
 // blake2s.h
 // BLAKE2s Hashing Context and API Prototypes
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #ifndef BLAKE2S_H
 #define BLAKE2S_H
 
@@ -37,3 +41,6 @@ int blake2s(void *out, size_t outlen,   // return buffer for digest
 
 #endif
 
+#ifdef __cplusplus
+}
+#endif
